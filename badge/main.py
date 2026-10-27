@@ -2,6 +2,10 @@
 # to return to the launcher after an app exits.
 import powman
 
+from edge_controls import install
+
+install(badge)
+
 wake_reason = powman.get_wake_reason()
 
 if wake_reason == powman.WAKE_DOUBLETAP:
